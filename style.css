@@ -3,6 +3,10 @@
    License: none (public domain)
 */
 
+* {
+    box-sizing: border-box;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -29,7 +33,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
 }
 ol, ul {
 	list-style: none;
@@ -45,4 +49,139 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+/* END RESET */
+
+h1, h2, h3 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+header {
+    width: 100%;
+    background: #444444;
+    overflow: auto;
+}
+
+header section {
+    width: 960px;
+    margin: 10px auto;
+    overflow: auto;
+}
+
+header img {
+    width: 200px;
+    height: 70px;
+    float: left;
+}
+
+header nav {
+    line-height: 70px;
+    float: left;
+    margin-left: 10px;
+}
+
+header section a {
+    display: block;
+    float: left;
+    padding: 0 50px 0 30px;
+    font-size: 16px;
+    color: #969696;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 350ms all;
+}
+
+header section a:hover {
+    /* text-decoration: underline; */
+    background: #969696;
+    color: #444444;
+}
+
+img {
+    display: block;
+}
+
+main {
+    width: 960px;
+    margin: 0 auto;
+}
+
+section {
+    margin-top: 30px;
+}
+
+section#sub {
+    display: flex;
+    justify-content: space-between;
+}
+
+section#featured {
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+    position: relative;
+}
+
+section#featured img {
+    width: 480px;
+    height: 400px;
+}
+
+section#featured article {
+    width: 450px;
+    height: 360px;
+    overflow-y: scroll;
+}
+section#featured article p {
+    margin: 5px 0;
+    line-height: 1.2;
+    font-style: italic;
+    font-size: 18px;
+}
+
+section#featured div>div {
+    position: absolute;
+    bottom: 0px;
+    height: 50px;
+    background: #ffffff;
+    width: 450px;
+}
+
+section#featured div button {
+    padding: 0 10px;
+    margin: 10px 5px 0 5px;
+    height: 40px;
+    width: 175px;
+    font-size: 14px;
+    background: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #969696;
+    border: 0;
+    transition: 350ms all;
+}
+
+section#featured div button:hover {
+    box-shadow: 0 0 0 2px #000;
+}
+
+section#featured div button:active {
+    box-shadow: 0 0 0 0px #fff;
+    /* transition: 100ms all; */
+}
+
+footer {
+    margin-top: 30px;
+    width: 100%;
+    height: 100px;
+    background: #444444;
+}
+
+footer section {
+    width: 960px;
+    margin: 0 auto; 
 }
